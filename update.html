@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Pendaftaran</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container topbar d-none d-lg-block">
+                <div class="topbar-inner">
+                    <div class="row gx-0">
+                        <div class="col-lg-7 text-start">
+                            
+                        </div>
+                        <div class="col-lg-5 text-end">
+                            <div class="h-100 d-inline-flex align-items-center">
+                                
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-3">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-0">PERAK <span class="text-primary">TahfizHub</span> </h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav ms-lg-auto mx-xl-auto">
+                            <a href="indexGS.html" class="nav-item nav-link ">LAMAN UTAMA</a>
+                            <a href="activity.html" class="nav-item nav-link">AKTIVITI</a>
+                            <a href="fasiliti.html" class="nav-item nav-link">FASILITI</a>
+                            <a href="registration.html" class="nav-item nav-link ">PENDAFTARAN</a>
+                            <a href="update.html" class="nav-item nav-link active">KEMASKINI</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid hero-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="hero-header-inner animated zoomIn">
+                            <p class="fs-4 text-dark">WELCOME TO PERAK <span class="text-primary"> TahfizHub</span></p>
+                            <h1 class="display-1 mb-5 text-dark">Kemaskini</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Registration Form Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5" id="registration-form">
+        <h1 class="display-3 mb-5 text-center">Kemaskini institusi <span class="text-primary">maahad tahfiz</span> anda sekarang</h1>
+        <form id="registerForm">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nama Penyelia</label>
+                    <input type="text" class="form-control" id="name" placeholder="Siti Sarah bt Ahmad">
+                </div>
+                <div class="col-md-6">
+                    <label for="institution-name" class="form-label">Nama Maahad</label>
+                    <input type="text" class="form-control" id="institution-name" placeholder="MAAHAD TAHFIZ AL-QURAN AL-IMAN">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Emel penyelia</label>
+                    <input type="email" class="form-control" id="email" placeholder="Siti@gmail.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">No Telefon</label>
+                    <input type="text" class="form-control" id="phone" placeholder="014-6777923">
+                </div>
+                <div class="col-12">
+                    <label for="address" class="form-label">Alamat Maahad</label>
+                    <input type="text" class="form-control" id="address" placeholder="Maahad tahfiz Al-Quran Al-Iman">
+                </div>
+                <div class="col-md-6">
+                    <label for="city" class="form-label">Bandar</label>
+                    <input type="text" class="form-control" id="city" placeholder="Tapah">
+                </div>
+                <div class="col-md-6">
+                    <label for="poscode" class="form-label">Poskod</label>
+                    <input type="text" class="form-control" id="postcode" placeholder="12000">
+                </div>
+                <div class="col-12">
+                    <label for="daerah" class="form-label">Daerah</label>
+                    <select class="form-control bg-transparent" id="daerah">
+                        <option value="">Pilih District</option>
+                        <option value="Bagan Datuk">Bagan Datuk</option>
+                        <option value="Batang Padang">Batang Padang</option>
+                        <option value="Hilir Perak">Hilir Perak</option>
+                        <option value="Hulu Perak">Hulu Perak</option>
+                        <option value="Ipoh">Ipoh</option>
+                        <option value="Kampar">Kampar</option>
+                        <option value="Kinta">Kinta</option>
+                        <option value="Kerian">Kerian</option>
+                        <option value="Kuala Kangsar">Kuala Kangsar</option>
+                        <option value="Larut">Larut</option>
+                        <option value="Manjung">Manjung</option>
+                        <option value="Matang">Matang</option>
+                        <option value="Muallim">Muallim</option>
+                        <option value="Perak Tengah">Perak Tengah</option>
+                        <option value="Selama">Selama</option>
+                        <option value="Tapah">Tapah</option>
+                    </select>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary py-3 px-5" onclick="submitForm()">Kemaskini</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Registration Form End -->
+
+<script>
+    function submitForm() {
+        // Perform any necessary form validation here
+
+        // Display pop-up message
+        alert("Pendaftaran berjaya.");
+
+        // Reset the form
+        document.getElementById("registerForm").reset();
+    }
+</script>
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-lg-7">
+                    </div>
+                    <div class="col-12">
+                        <div class="border-top border-secondary"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-light back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
